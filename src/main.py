@@ -1,5 +1,11 @@
+import sys
+
 from colorama import Fore, Style, init
 from pydantic import BaseModel, Field
+
+# Consolas Windows (cp1252) no pueden imprimir caracteres especiales
+if hasattr(sys.stdout, "reconfigure"):
+  sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 # Inicializar colorama para la consola
 init(autoreset=True)

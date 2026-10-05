@@ -1,3 +1,4 @@
-requests==2.31.0
-pydantic==2.6.4
-colorama
+pydantic==2.13.5
+requests==2.34.2
+colorama==0.4.6
+pytest==9.1.1
